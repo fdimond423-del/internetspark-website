@@ -240,11 +240,12 @@ img { max-width: 100%; height: auto; }
   top: 0; left: 0; right: 0;
   z-index: 1000;
   padding: 16px 0;
+  background: transparent;
   transition: var(--transition);
 }
 
 .navbar.scrolled {
-  background: rgba(10,10,15,0.85);
+  background: transparent;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   border-bottom: 1px solid var(--glass-border);
@@ -268,7 +269,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .nav-logo img {
-  height: 50px;
+  height: 80px;
   width: auto;
   filter: drop-shadow(0 0 10px rgba(233, 30, 140,0.5));
   transition: var(--transition);
