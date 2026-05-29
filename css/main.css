@@ -591,8 +591,10 @@ img { max-width: 100%; height: auto; }
 
 .section-header p {
   font-size: 1.1rem;
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
+  line-height: 1.8;
+  color: var(--text-muted);
 }
 
 /* ===== Cards ===== */
