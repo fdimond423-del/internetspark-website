@@ -100,7 +100,11 @@
   if (navPlaceholder) navPlaceholder.outerHTML = navHTML;
   else document.body.insertAdjacentHTML('afterbegin', navHTML);
 
-  // Inject footer  
+  // Inject boxify script
+  const boxifyScript = document.createElement('script');
+  boxifyScript.src = `${base}js/boxify.js`;
+  document.body.appendChild(boxifyScript);
+
   const footerPlaceholder = document.getElementById('shared-footer') || document.querySelector('footer');
   if (footerPlaceholder) footerPlaceholder.outerHTML = footerHTML;
 
