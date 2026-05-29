@@ -7,18 +7,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="${base}index.html" class="nav-logo">
-        <div class="spark-logo-wrapper" style="--logo-width: 70px; --logo-height: 42px; --logo-scale: 0.18;">
-          <div class="spark-logo">
-            <div class="text">
-              <div class="internet">Internet</div>
-              <div class="spark">SPARK</div>
-            </div>
-            <div class="icon">
-              <div class="i"></div>
-              <div class="s">S</div>
-            </div>
-          </div>
-        </div>
+        <img src="${base}images/logo_white.png" alt="Internet Spark Logo" style="height: 45px; width: auto; object-fit: contain;">
       </a>
       <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
       <ul class="nav-menu" id="nav-menu">
@@ -63,18 +52,7 @@
         <div class="footer-brand">
           <div class="logo">
             <a href="${base}index.html" style="display:inline-block;">
-              <div class="spark-logo-wrapper" style="--logo-width: 85px; --logo-height: 51px; --logo-scale: 0.22;">
-                <div class="spark-logo">
-                  <div class="text">
-                    <div class="internet">Internet</div>
-                    <div class="spark">SPARK</div>
-                  </div>
-                  <div class="icon">
-                    <div class="i"></div>
-                    <div class="s">S</div>
-                  </div>
-                </div>
-              </div>
+              <img src="${base}images/logo_white.png" alt="Internet Spark Logo" style="height: 55px; width: auto; object-fit: contain;">
             </a>
           </div>
           <p>Internet Spark is a premium international digital marketing agency. Data-driven strategies that transform businesses and generate measurable ROI.</p>

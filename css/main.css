@@ -2615,10 +2615,7 @@ div.loader-logo:not(:has(img)) {
   z-index: 2;
 }
 
-/* Hide all static logo image tags to prevent white background flashes */
-.nav-logo img,
-.footer-brand .logo img,
-.logo img,
+/* Hide loader images */
 .loader-logo,
 .page-loader img {
   display: none !important;
