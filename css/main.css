@@ -2763,3 +2763,307 @@ div.loader-logo:not(:has(img)) {
   100% { transform: translate(-50%,-50%) rotate(360deg) translateX(130px) rotate(-360deg); }
 }
 
+/* ============================================
+   COMPREHENSIVE MOBILE RESPONSIVE CSS
+   ============================================ */
+
+/* ---- 768px and below (Tablets & Mobile) ---- */
+@media (max-width: 768px) {
+
+  /* Container padding */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 100px 0 60px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 7vw, 2.8rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    max-width: 320px;
+  }
+
+  /* Stats grid */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  /* Section header */
+  .section-header {
+    margin-bottom: 36px;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .service-card {
+    padding: 24px;
+  }
+
+  /* About / Two-column sections */
+  .about-grid,
+  .why-grid,
+  .content-grid,
+  .two-col-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px;
+  }
+
+  /* Feature grid */
+  .feature-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px;
+  }
+
+  /* Team grid */
+  .team-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px;
+  }
+
+  /* Result cards */
+  .result-card {
+    padding: 16px;
+  }
+
+  .result-number {
+    font-size: 1.5rem;
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Blog / Portfolio grid */
+  .blog-grid,
+  .portfolio-grid,
+  .case-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  /* Pricing */
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* FAQ */
+  .faq-list {
+    max-width: 100%;
+  }
+
+  .faq-question {
+    padding: 18px 20px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .faq-answer-inner,
+  .faq-answer {
+    padding: 0 20px 18px !important;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  /* Page hero */
+  .page-hero {
+    padding: 90px 0 50px;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(1.6rem, 6vw, 2.4rem);
+  }
+
+  /* CTA Section */
+  .cta-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+  }
+
+  /* Nav */
+  .nav-container {
+    padding: 0 16px;
+  }
+
+  /* Buttons in mobile */
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+
+  /* Glass cards */
+  .glass-card {
+    padding: 20px;
+  }
+
+  /* Typewriter heading */
+  #typewriter-text {
+    display: block;
+  }
+
+  .typewriter-cursor {
+    display: inline;
+  }
+}
+
+/* ---- 480px and below (Small Mobile) ---- */
+@media (max-width: 480px) {
+
+  /* Typography */
+  h1 { font-size: clamp(1.6rem, 8vw, 2.2rem) !important; }
+  h2 { font-size: clamp(1.4rem, 6vw, 1.8rem) !important; }
+  h3 { font-size: clamp(1.1rem, 4vw, 1.4rem) !important; }
+
+  /* Hero */
+  .hero {
+    padding: 90px 0 50px;
+  }
+
+  /* Stats go to 2 columns */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  /* Feature grid single column */
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Team single column */
+  .team-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Cards grid */
+  .awards-grid,
+  [style*="grid-template-columns:repeat(auto-fill"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Contact form */
+  .contact-form-wrap {
+    padding: 20px 16px !important;
+  }
+
+  /* Buttons full width */
+  .hero-actions .btn,
+  .cta-section .btn {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  /* Section badge */
+  .section-badge {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+
+  /* Page hero smaller */
+  .page-hero {
+    padding: 80px 0 40px;
+  }
+
+  /* FAQ full padding fix */
+  .faq-list {
+    padding: 0;
+  }
+
+  .faq-question {
+    padding: 16px !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Footer brand */
+  .footer-brand img {
+    height: 36px;
+  }
+
+  /* Whatsapp / Call floats */
+  .whatsapp-float {
+    right: 12px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+
+  .call-float {
+    left: 12px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+}
