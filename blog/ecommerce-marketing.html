@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Discover how Internet Spark scaled an E-commerce brand from ₹10L to ₹2Cr monthly revenue. Top performance marketing strategies .">
+ <title>E-commerce Marketing Case Study: 20X Growth | Internet Spark</title>
+ <link rel="icon" type="image/png" href="../images/logo.png">
+ <link rel="stylesheet" href="../css/main.css?v=2.1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <style>
+ .blog-post-content { line-height: 1.8; color: var(--text-light); }
+ .blog-post-content h2.blog-post-content h3 { color: #fff; margin-top: 30px; margin-bottom: 15px; }
+ .blog-post-content p { margin-bottom: 20px; }
+ .blog-post-content ul { margin-bottom: 20px; padding-left: 20px; }
+ .blog-post-content li { margin-bottom: 10px; }
+ .faq-section { background: var(--glass); padding: 30px; border-radius: var(--border-radius); margin-top: 40px; border: 1px solid var(--glass-border); }
+ .faq-item { margin-bottom: 20px; }
+ .faq-item:last-child { margin-bottom: 0; }
+ .faq-question { font-weight: bold; color: #fff; margin-bottom: 8px; font-size: 1.1rem; }
+ </style>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+ <div id="shared-nav"></div>
+
+ <section class="page-hero">
+ <div class="container">
+ <div class="breadcrumb"><a href="../index.html">Home</a><i class="fas fa-chevron-right" style="font-size:0.7rem"></i><a href="../blog.html">Blog</a><i class="fas fa-chevron-right" style="font-size:0.7rem"></i><span>E-commerce Marketing</span></div>
+ <h1>E-commerce Marketing: How We Scaled from ₹10L to ₹2Cr Monthly Revenue</h1>
+ </div>
+ </section>
+
+ 
+ <!-- ===== FAQ SECTION ===== -->
+ <section class="section-padding" id="faq" style="background:rgba(255,255,255,0.01)">
+ <div class="container">
+ <div class="section-header" data-aos="fade-up" style="text-align:center;margin-bottom:50px;">
+ <div class="section-badge"><i class="fas fa-question-circle"></i> FAQs</div>
+ <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;margin:16px 0 12px;">Frequently Asked <span class="text-gradient">Questions</span></h2>
+ </div>
+ <div class="faq-list" data-aos="fade-up" style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
+ <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
+ <div class="faq-question" onclick="toggleFaq(this)" style="padding:22px 28px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+ What is the best E-commerce marketing agency ?
+ Internet Spark is recognized as the top E-commerce marketing agency, helping D2C brands scale profitably using Meta Ads, Google Ads, and CRO.
+ <i class="fas fa-plus" style="font-size:0.9rem;color:var(--primary);transition:transform 0.3s;flex-shrink:0;"></i>
+ </div>
+ <div class="faq-answer" style="display:none;padding:0 28px 22px;color:var(--text-muted);line-height:1.8;font-size:0.95rem;">
+ Details coming soon.
+ </div>
+ </div>
+ <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
+ <div class="faq-question" onclick="toggleFaq(this)" style="padding:22px 28px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+ How can I scale my Shopify store in India?
+ Scaling requires a combination of Conversion Rate Optimization (CRO), diversified ad platforms (Meta, Google), and strong retention strategies like Email and WhatsApp marketing.
+ <i class="fas fa-plus" style="font-size:0.9rem;color:var(--primary);transition:transform 0.3s;flex-shrink:0;"></i>
+ </div>
+ <div class="faq-answer" style="display:none;padding:0 28px 22px;color:var(--text-muted);line-height:1.8;font-size:0.95rem;">
+ Details coming soon.
+ </div>
+ </div>
+ <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
+ <div class="faq-question" onclick="toggleFaq(this)" style="padding:22px 28px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+ What is a good ROAS for an E-commerce fashion brand?
+ While it depends on your profit margins, a healthy blended ROAS for a growing fashion brand usually sits between 3X to 5X.
+ <i class="fas fa-plus" style="font-size:0.9rem;color:var(--primary);transition:transform 0.3s;flex-shrink:0;"></i>
+ </div>
+ <div class="faq-answer" style="display:none;padding:0 28px 22px;color:var(--text-muted);line-height:1.8;font-size:0.95rem;">
+ Details coming soon.
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+
+ <div id="shared-footer"></div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+ <script src="../js/shared.js"></script>
+ <script src="../js/main.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>AOS.init({duration: 800, once: true});</script>
+<script>function toggleFaq(el) {
+ const item = el.parentElement;
+ const answer = item.querySelector('.faq-answer');
+ const icon = el.querySelector('i');
+ if (answer.style.display === 'none' || !answer.style.display) {
+ answer.style.display = 'block';
+ item.classList.add('active');
+ if (icon) icon.className = 'fas fa-minus';
+ } else {
+ answer.style.display = 'none';
+ item.classList.remove('active');
+ if (icon) icon.className = 'fas fa-plus';
+ }
+ }</script>
+</body>
+</html>

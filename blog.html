@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Digital Marketing Blog by Internet Spark — Insights on SEO, Meta Ads, Google Ads, Social Media, E-commerce and more from India's leading digital marketing experts.">
+ <title>Blog | Internet Spark - Digital Marketing Insights</title>
+ <link rel="icon" type="image/png" href="images/logo.png">
+ <link rel="stylesheet" href="css/main.css?v=2.1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <style>
+ .blog-layout { display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: start; }
+ @media(max-width:960px){ .blog-layout { grid-template-columns: 1fr; } }
+ .sidebar-widget { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--border-radius); padding: 28px; margin-bottom: 24px; }
+ .sidebar-widget h4 { margin-bottom: 20px; font-size: 1rem; }
+ .popular-post { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--glass-border); }
+ .popular-post:last-child { border-bottom: none; }
+ .popular-emoji { width: 48px; height: 48px; background: var(--gradient-card); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+ .blog-hero-card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--border-radius-lg); overflow: hidden; margin-bottom: 32px; transition: var(--transition); }
+ .blog-hero-card:hover { border-color: rgba(233,30,140,0.3); transform: translateY(-4px); }
+ .blog-hero-img { height: 280px; display: flex; align-items: center; justify-content: center; font-size: 5rem; }
+ .newsletter-input { display: flex; gap: 0; margin-top: 16px; }
+ .newsletter-input input { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); border-right: none; border-radius: 10px 0 0 10px; padding: 12px 16px; color: white; font-family: 'Outfit',sans-serif; outline: none; }
+ .newsletter-input button { background: var(--gradient-primary); border: none; padding: 12px 20px; border-radius: 0 10px 10px 0; color: white; cursor: pointer; font-family: 'Outfit',sans-serif; font-weight: 600; transition: var(--transition); }
+ .newsletter-input button:hover { opacity: 0.9; }
+ </style>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+ <div class="page-loader"><img src="images/logo.png" alt="Internet Spark" class="loader-logo"><div class="loader-bar"><div class="loader-progress"></div></div></div>
+ <div class="animated-bg"></div><canvas id="particles-canvas"></canvas>
+ <a href="https://wa.me/919313702720" target="_blank" class="whatsapp-float" id="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+ <a href="tel:+919313702720" class="call-float" id="call-btn"><i class="fas fa-phone-alt"></i></a>
+ <div id="shared-nav"></div>
+
+ <section class="page-hero">
+ <div class="container">
+ <div class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right" style="font-size:0.7rem"></i><span>Blog</span></div>
+ <div class="section-badge" style="margin:0 auto 20px;width:fit-content"><i class="fas fa-pen"></i> Our Blog</div>
+ <h1>Digital Marketing <span class="text-gradient">Insights & Tips</span></h1>
+ <p style="max-width:700px;margin:20px auto 0;font-size:1.1rem">Expert knowledge, actionable strategies, and industry insights from a leading digital marketing team. Updated weekly.</p>
+ </div>
+ </section>
+
+ <section class="section-padding">
+ <div class="container">
+ <div class="filter-tabs" style="margin-bottom:40px">
+ <button class="filter-tab active" id="blog-all">All Posts</button>
+ <button class="filter-tab" id="blog-seo">SEO</button>
+ <button class="filter-tab" id="blog-social">Social Media</button>
+ <button class="filter-tab" id="blog-ads">Google Ads</button>
+ <button class="filter-tab" id="blog-meta">Meta Ads</button>
+ <button class="filter-tab" id="blog-ecom">E-commerce</button>
+ <button class="filter-tab" id="blog-content">Content</button>
+ </div>
+
+ <div class="blog-layout">
+ <!-- Main Blog Grid -->
+ <div>
+ <!-- Featured Post -->
+ <div class="blog-hero-card " data-aos="fade-up">
+ <div class="blog-hero-img" style="background:linear-gradient(135deg,#1A0A2E,#E91E8C,#FF6B35)">📊</div>
+ <div style="padding:32px">
+ <div class="blog-meta"><span class="category">Meta Ads</span><span>🕐 8 min read</span><span>May 15, 2024</span></div>
+ <h2 style="margin-bottom:12px;font-size:1.6rem">10 Proven Meta Ads Strategies That Generated 5X ROAS in 2024</h2>
+ <p style="color:var(--text-muted);line-height:1.8;margin-bottom:20px">After managing over ₹10 Crore in Meta Ad spend across 200+ campaigns, we've identified the exact strategies that consistently deliver 5X ROAS. From creative testing frameworks to advanced audience layering — here's what actually works...</p>
+ <a href="blog/meta-ads.html" class="btn btn-primary" id="blog-read-1"><i class="fas fa-arrow-right"></i> Read Full Article</a>
+ </div>
+ </div>
+
+ <!-- Blog Grid -->
+ <div class="blog-grid">
+ <div class="blog-card " data-aos="fade-up">
+ <div class="blog-card-img" style="background:linear-gradient(135deg,#0D1B2A,#1565C0);display:flex;align-items:center;justify-content:center;font-size:4rem;height:200px">🔍</div>
+ <div class="blog-card-body">
+ <div class="blog-meta"><span class="category">SEO</span><span>🕐 12 min</span><span>May 10, 2024</span></div>
+ <h4 style="margin-bottom:8px">How to Rank #1 on Google in 90 Days: Our SEO Blueprint</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted)">The exact step-by-step SEO playbook we use to rank client websites in the top 3 positions within 90 days...</p>
+ <a href="blog/seo-blueprint.html" class="btn btn-ghost" id="blog-read-2" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ </div>
+ </div>
+ <div class="blog-card " data-aos="fade-up">
+ <div class="blog-card-img" style="background:linear-gradient(135deg,#1B4332,#25D366);display:flex;align-items:center;justify-content:center;font-size:4rem;height:200px">💬</div>
+ <div class="blog-card-body">
+ <div class="blog-meta"><span class="category">Social Media</span><span>🕐 7 min</span><span>May 5, 2024</span></div>
+ <h4 style="margin-bottom:8px">The Ultimate WhatsApp Marketing Guide for Indian Businesses 2024</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted)">WhatsApp has 500M Indian users. Here's how to leverage it ethically for 95% open-rate marketing campaigns...</p>
+ <a href="blog/whatsapp-marketing.html" class="btn btn-ghost" id="blog-read-3" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ </div>
+ </div>
+ <div class="blog-card " data-aos="fade-up">
+ <div class="blog-card-img" style="background:linear-gradient(135deg,#1A0E2E,#4285F4);display:flex;align-items:center;justify-content:center;font-size:4rem;height:200px">📍</div>
+ <div class="blog-card-body">
+ <div class="blog-meta"><span class="category">Local SEO</span><span>🕐 6 min</span><span>April 28, 2024</span></div>
+ <h4 style="margin-bottom:8px">Google My Business Optimization: Get More Local Customers in 2024</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted)">7 GMB optimization tactics that tripled our clients' call volume from Google Search in under 60 days...</p>
+ <a href="blog/gmb-optimization.html" class="btn btn-ghost" id="blog-read-4" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ </div>
+ </div>
+ <div class="blog-card " data-aos="fade-up">
+ <div class="blog-card-img" style="background:linear-gradient(135deg,#2D1B69,#FF6B35);display:flex;align-items:center;justify-content:center;font-size:4rem;height:200px">🛒</div>
+ <div class="blog-card-body">
+ <div class="blog-meta"><span class="category">E-commerce</span><span>🕐 10 min</span><span>April 20, 2024</span></div>
+ <h4 style="margin-bottom:8px">E-commerce Marketing: How We Scaled from ₹10L to ₹2Cr Monthly Revenue</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted)">The exact framework we used to 20X a fashion brand's online revenue using Meta Ads, email and influencers...</p>
+ <a href="blog/ecommerce-marketing.html" class="btn btn-ghost" id="blog-read-5" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ </div>
+ </div>
+ <div class="blog-card " data-aos="fade-up">
+ <div class="blog-card-img" style="background:linear-gradient(135deg,#0A1A2E,#0077B5);display:flex;align-items:center;justify-content:center;font-size:4rem;height:200px">💼</div>
+ <div class="blog-card-body">
+ <div class="blog-meta"><span class="category">LinkedIn</span><span>🕐 9 min</span><span>April 15, 2024</span></div>
+ <h4 style="margin-bottom:8px">LinkedIn Personal Branding for CEOs and Founders in 2024</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted)">How Indian executives are using LinkedIn to build authority, generate B2B leads, and attract top talent...</p>
+ <a href="blog/linkedin-branding.html" class="btn btn-ghost" id="blog-read-6" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ </div>
+ </div>
+ <div class="blog-card " data-aos="fade-up">
+ <div class="blog-card-img" style="background:linear-gradient(135deg,#1A1A2E,#7B2FBE);display:flex;align-items:center;justify-content:center;font-size:4rem;height:200px">🤖</div>
+ <div class="blog-card-body">
+ <div class="blog-meta"><span class="category">AI & Content</span><span>🕐 8 min</span><span>April 8, 2024</span></div>
+ <h4 style="margin-bottom:8px">AI in Digital Marketing: How to Use ChatGPT for Content Creation</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted)">Our tested prompts and workflows for using AI to create SEO content, ad copy, and social media posts at scale...</p>
+ <a href="blog/ai-digital-marketing.html" class="btn btn-ghost" id="blog-read-7" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ </div>
+ </div>
+ <div class="blog-card " data-aos="fade-up">
+ <div class="blog-card-img" style="background:linear-gradient(135deg,#2D0A0A,#FF0000);display:flex;align-items:center;justify-content:center;font-size:4rem;height:200px">▶️</div>
+ <div class="blog-card-body">
+ <div class="blog-meta"><span class="category">Video Marketing</span><span>🕐 6 min</span><span>April 1, 2024</span></div>
+ <h4 style="margin-bottom:8px">Video Marketing Strategy: Why Reels Are Dominating Social Media in 2024</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted)">Short-form video is the #1 content format. Here's our proven Reels strategy that drives reach and conversions...</p>
+ <a href="blog/video-marketing-reels.html" class="btn btn-ghost" id="blog-read-8" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ </div>
+ </div>
+ <div class="blog-card " data-aos="fade-up">
+ <div class="blog-card-img" style="background:linear-gradient(135deg,#1A0A10,#C62828);display:flex;align-items:center;justify-content:center;font-size:4rem;height:200px">🏠</div>
+ <div class="blog-card-body">
+ <div class="blog-meta"><span class="category">Industry</span><span>🕐 15 min</span><span>March 25, 2024</span></div>
+ <h4 style="margin-bottom:8px">The Complete Guide to Real Estate Digital Marketing in India 2024</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted)">Everything real estate developers need to know to generate qualified leads and sell properties faster online...</p>
+ <a href="blog/real-estate-marketing.html" class="btn btn-ghost" id="blog-read-9" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Sidebar -->
+ <div>
+ <div class="sidebar-widget " data-aos="fade-up">
+ <h4>📧 Subscribe to Newsletter</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:0">Get weekly digital marketing tips and industry updates directly in your inbox.</p>
+ <form class="newsletter-input" action="https://formsubmit.co/yashworkonly16@gmail.com" method="POST">
+ <input type="email" name="email" placeholder="Your email address" required>
+ <input type="hidden" name="_subject" value="New Newsletter Subscription - Internet Spark">
+ <input type="hidden" name="_captcha" value="false">
+ <button type="submit" id="newsletter-submit">Subscribe</button>
+ </form>
+ </div>
+ <div class="sidebar-widget " data-aos="fade-up">
+ <h4>🔥 Popular Posts</h4>
+ <div class="popular-post"><div class="popular-emoji">📊</div><div><a href="blog/meta-ads.html" style="font-size:0.875rem;font-weight:600;color:var(--text-light)">10 Meta Ads Strategies for 5X ROAS</a><div style="font-size:0.75rem;color:var(--text-muted);margin-top:4px">8 min read • 5.2K views</div></div></div>
+ <div class="popular-post"><div class="popular-emoji">🔍</div><div><a href="blog/seo-blueprint.html" style="font-size:0.875rem;font-weight:600;color:var(--text-light)">Rank #1 on Google in 90 Days</a><div style="font-size:0.75rem;color:var(--text-muted);margin-top:4px">12 min read • 4.8K views</div></div></div>
+ <div class="popular-post"><div class="popular-emoji">🛒</div><div><a href="blog/ecommerce-marketing.html" style="font-size:0.875rem;font-weight:600;color:var(--text-light)">Scale E-commerce from ₹10L to ₹2Cr</a><div style="font-size:0.75rem;color:var(--text-muted);margin-top:4px">10 min read • 3.9K views</div></div></div>
+ <div class="popular-post"><div class="popular-emoji">🤖</div><div><a href="blog/ai-digital-marketing.html" style="font-size:0.875rem;font-weight:600;color:var(--text-light)">AI in Digital Marketing — Full Guide</a><div style="font-size:0.75rem;color:var(--text-muted);margin-top:4px">8 min read • 3.2K views</div></div></div>
+ </div>
+ <div class="sidebar-widget " data-aos="fade-up">
+ <h4>📂 Categories</h4>
+ <div style="display:flex;flex-direction:column;gap:8px">
+ <a href="blog.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;transition:var(--transition);color:var(--text-muted);font-size:0.875rem" onmouseover="this.style.background='rgba(233,30,140,0.1)';this.style.color='var(--primary-light)'" onmouseout="this.style.background='';this.style.color='var(--text-muted)'">SEO Tips <span style="background:rgba(233,30,140,0.15);color:var(--primary-light);padding:2px 10px;border-radius:50px;font-size:0.75rem">12</span></a>
+ <a href="blog.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;transition:var(--transition);color:var(--text-muted);font-size:0.875rem" onmouseover="this.style.background='rgba(233,30,140,0.1)';this.style.color='var(--primary-light)'" onmouseout="this.style.background='';this.style.color='var(--text-muted)'">Social Media <span style="background:rgba(233,30,140,0.15);color:var(--primary-light);padding:2px 10px;border-radius:50px;font-size:0.75rem">18</span></a>
+ <a href="blog.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;transition:var(--transition);color:var(--text-muted);font-size:0.875rem" onmouseover="this.style.background='rgba(233,30,140,0.1)';this.style.color='var(--primary-light)'" onmouseout="this.style.background='';this.style.color='var(--text-muted)'">Meta Ads <span style="background:rgba(233,30,140,0.15);color:var(--primary-light);padding:2px 10px;border-radius:50px;font-size:0.75rem">9</span></a>
+ <a href="blog.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;transition:var(--transition);color:var(--text-muted);font-size:0.875rem" onmouseover="this.style.background='rgba(233,30,140,0.1)';this.style.color='var(--primary-light)'" onmouseout="this.style.background='';this.style.color='var(--text-muted)'">Google Ads <span style="background:rgba(233,30,140,0.15);color:var(--primary-light);padding:2px 10px;border-radius:50px;font-size:0.75rem">8</span></a>
+ <a href="blog.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;transition:var(--transition);color:var(--text-muted);font-size:0.875rem" onmouseover="this.style.background='rgba(233,30,140,0.1)';this.style.color='var(--primary-light)'" onmouseout="this.style.background='';this.style.color='var(--text-muted)'">E-commerce <span style="background:rgba(233,30,140,0.15);color:var(--primary-light);padding:2px 10px;border-radius:50px;font-size:0.75rem">11</span></a>
+ <a href="blog.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;transition:var(--transition);color:var(--text-muted);font-size:0.875rem" onmouseover="this.style.background='rgba(233,30,140,0.1)';this.style.color='var(--primary-light)'" onmouseout="this.style.background='';this.style.color='var(--text-muted)'">Content Marketing <span style="background:rgba(233,30,140,0.15);color:var(--primary-light);padding:2px 10px;border-radius:50px;font-size:0.75rem">7</span></a>
+ </div>
+ </div>
+ <div class="sidebar-widget " data-aos="fade-up" style="text-align:center;background:linear-gradient(135deg,rgba(233,30,140,0.15),rgba(123,47,190,0.15));border-color:rgba(233,30,140,0.3)">
+ <div style="font-size:2.5rem;margin-bottom:16px">🚀</div>
+ <h4 style="margin-bottom:12px">Ready to Grow?</h4>
+ <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:20px">Get a free digital marketing audit from our expert team.</p>
+ <a href="contact.html" class="btn btn-primary" id="blog-sidebar-cta" style="width:100%;justify-content:center">Get Free Audit</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <div id="shared-footer"></div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+ <script src="js/shared.js"></script>
+ <script src="js/main.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>AOS.init({duration: 800, once: true});</script>
+</body>
+</html>

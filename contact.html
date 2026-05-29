@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Contact Internet Spark - 's #1 Digital Marketing Agency located at Makarba, SG Highway. Call +91 93137 02720 or email yashworkonly16@gmail.com for a free consultation.">
+ <title>Contact Us | Best Digital Marketing Agency | Internet Spark</title>
+ <link rel="icon" type="image/png" href="images/logo.png">
+ <link rel="stylesheet" href="css/main.css?v=2.1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <style>
+ .contact-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 48px; align-items: start; }
+ @media(max-width:900px){ .contact-grid { grid-template-columns: 1fr; } }
+ .contact-info-card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--border-radius); padding: 28px; display: flex; gap: 16px; align-items: flex-start; transition: var(--transition); margin-bottom: 16px; }
+ .contact-info-card:hover { border-color: rgba(233,30,140,0.3); transform: translateX(6px); }
+ .contact-info-icon { width: 52px; height: 52px; background: var(--gradient-primary); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; box-shadow: 0 8px 25px rgba(233,30,140,0.4); }
+ .map-placeholder { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--border-radius-lg); height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; margin-top: 24px; position: relative; overflow: hidden; }
+ .map-placeholder::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(233,30,140,0.05), rgba(123,47,190,0.05)); }
+ </style>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+ <div class="page-loader"><img src="images/logo.png" alt="Internet Spark" class="loader-logo"><div class="loader-bar"><div class="loader-progress"></div></div></div>
+ <div class="animated-bg"></div>
+ <canvas id="particles-canvas"></canvas>
+ <a href="https://wa.me/919313702720" target="_blank" class="whatsapp-float" id="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+ <a href="tel:+919313702720" class="call-float" id="call-btn"><i class="fas fa-phone-alt"></i></a>
+
+ <div id="shared-nav"></div>
+
+ <section class="page-hero">
+ <div class="container">
+ <div class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right" style="font-size:0.7rem"></i><span>Contact Us</span></div>
+ <div class="section-badge" style="margin:0 auto 20px;width:fit-content"><i class="fas fa-paper-plane"></i> Let's Talk</div>
+ <h1>Get In <span class="text-gradient">Touch </span></h1>
+ <p style="max-width:600px;margin:20px auto 0;font-size:1.1rem">Ready to grow your business? Reach out for a free consultation. Visit our office near SG Highway or call us today!</p>
+ </div>
+ </section>
+
+ <section class="section-padding">
+ <div class="container">
+ <div class="contact-grid">
+ <!-- Left: Contact Info -->
+ <div class="-left" data-aos="fade-up">
+ <h3 style="margin-bottom:8px">We'd Love to Hear From You</h3>
+ <p style="color:var(--text-muted);margin-bottom:32px">Whether you have a question, want a quote, or just want to say hello — we're here for you.</p>
+
+ <div class="contact-info-card">
+ <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+ <div><h5 style="margin-bottom:4px">Visit Our Office</h5><p style="font-size:0.9rem;color:var(--text-muted)">A-407, KP Epitome, Nr. DAV International School, Makarba – 380051, Gujarat, India</p></div>
+ </div>
+ <a href="tel:+919313702720" class="contact-info-card" style="text-decoration:none;color:inherit;display:flex">
+ <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+ <div><h5 style="margin-bottom:4px">Call Us Now</h5><p style="font-size:0.9rem;color:var(--primary-light);font-weight:600">+91 93137 02720</p><p style="font-size:0.8rem;color:var(--text-muted)">Mon–Sat: 9:00 AM – 7:00 PM</p></div>
+ </a>
+ <a href="mailto:yashworkonly16@gmail.com" class="contact-info-card" style="text-decoration:none;color:inherit;display:flex">
+ <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+ <div><h5 style="margin-bottom:4px">Email Us</h5><p style="font-size:0.9rem;color:var(--primary-light);font-weight:600">yashworkonly16@gmail.com</p><p style="font-size:0.8rem;color:var(--text-muted)">We reply within 24 hours</p></div>
+ </a>
+ <a href="https://wa.me/919313702720" target="_blank" class="contact-info-card" style="text-decoration:none;color:inherit;display:flex">
+ <div class="contact-info-icon" style="background:#25D366"><i class="fab fa-whatsapp"></i></div>
+ <div><h5 style="margin-bottom:4px">WhatsApp</h5><p style="font-size:0.9rem;color:#25D366;font-weight:600">Chat on WhatsApp</p><p style="font-size:0.8rem;color:var(--text-muted)">Instant response for quick queries</p></div>
+ </a>
+
+ <div style="margin-top:32px">
+ <h5 style="margin-bottom:16px">Follow Us On Social Media</h5>
+ <div style="display:flex;gap:12px">
+ <a href="https://www.facebook.com/internetspark" target="_blank" id="contact-fb" style="width:48px;height:48px;background:rgba(24,119,242,0.15);border:1px solid rgba(24,119,242,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#1877F2;transition:var(--transition)" onmouseover="this.style.background='#1877F2';this.style.color='white'" onmouseout="this.style.background='rgba(24,119,242,0.15)';this.style.color='#1877F2'"><i class="fab fa-facebook-f"></i></a>
+ <a href="https://www.instagram.com/internet_spark/" target="_blank" id="contact-ig" style="width:48px;height:48px;background:rgba(225,48,108,0.15);border:1px solid rgba(225,48,108,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#E1306C;transition:var(--transition)" onmouseover="this.style.background='#E1306C';this.style.color='white'" onmouseout="this.style.background='rgba(225,48,108,0.15)';this.style.color='#E1306C'"><i class="fab fa-instagram"></i></a>
+ <a href="https://wa.me/919313702720" target="_blank" id="contact-wa" style="width:48px;height:48px;background:rgba(37,211,102,0.15);border:1px solid rgba(37,211,102,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#25D366;transition:var(--transition)" onmouseover="this.style.background='#25D366';this.style.color='white'" onmouseout="this.style.background='rgba(37,211,102,0.15)';this.style.color='#25D366'"><i class="fab fa-whatsapp"></i></a>
+ <a href="https://www.youtube.com/@InternetSparkPrivateLimited" target="_blank" id="contact-yt" style="width:48px;height:48px;background:rgba(255,0,0,0.15);border:1px solid rgba(255,0,0,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#FF0000;transition:var(--transition)" onmouseover="this.style.background='#FF0000';this.style.color='white'" onmouseout="this.style.background='rgba(255,0,0,0.15)';this.style.color='#FF0000'"><i class="fab fa-youtube"></i></a>
+ <a href="https://www.linkedin.com/company/internet-spark/" target="_blank" id="contact-li" style="width:48px;height:48px;background:rgba(0,119,181,0.15);border:1px solid rgba(0,119,181,0.3);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#0077B5;transition:var(--transition)" onmouseover="this.style.background='#0077B5';this.style.color='white'" onmouseout="this.style.background='rgba(0,119,181,0.15)';this.style.color='#0077B5'"><i class="fab fa-linkedin-in"></i></a>
+ </div>
+ </div>
+
+ <!-- Map -->
+ <div class="map-placeholder">
+ <div style="font-size:3rem;position:relative;z-index:1">📍</div>
+ <div style="text-align:center;position:relative;z-index:1">
+ <div style="font-weight:700;font-size:1.1rem;margin-bottom:4px">Internet Spark Office</div>
+ <div style="color:var(--text-muted);font-size:0.875rem">A-407, KP Epitome, Off SG Highway, Makarba</div>
+ </div>
+ <a href="https://maps.google.com/?q=KP+Epitome+Makarba+" target="_blank" class="btn btn-primary" id="map-link" style="position:relative;z-index:1"><i class="fas fa-directions"></i> Get Directions</a>
+ </div>
+ </div>
+
+ <!-- Right: Contact Form -->
+ <div class="contact-form-wrap -right" data-aos="fade-up">
+ <h3 style="margin-bottom:8px">Send Us a Message</h3>
+ <p style="color:var(--text-muted);margin-bottom:32px">Fill out the form below and we'll get back to you with a free consultation plan.</p>
+ <form action="https://formsubmit.co/yashworkonly16@gmail.com" method="POST" data-form id="main-contact-form">
+ <input type="hidden" name="_subject" value="New Enquiry from Internet Spark Website">
+ <input type="hidden" name="_captcha" value="false">
+ <div class="form-row">
+ <div class="form-group">
+ <label for="contact-name">Full Name *</label>
+ <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+ </div>
+ <div class="form-group">
+ <label for="contact-phone">Phone Number *</label>
+ <input type="tel" id="contact-phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+ </div>
+ </div>
+ <div class="form-group">
+ <label for="contact-email">Email Address *</label>
+ <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+ </div>
+ <div class="form-group">
+ <label for="contact-business">Business / Company Name</label>
+ <input type="text" id="contact-business" name="business" placeholder="Your business name">
+ </div>
+ <div class="form-row">
+ <div class="form-group">
+ <label for="contact-service">Service Interested In *</label>
+ <select id="contact-service" name="service" required>
+ <option value="">Select a service...</option>
+ <option>Social Media Marketing</option>
+ <option>Meta Ads (Facebook & Instagram)</option>
+ <option>Google Ads / PPC</option>
+ <option>Search Engine Optimization (SEO)</option>
+ <option>Website Development</option>
+ <option>Branding & Graphic Design</option>
+ <option>Video Editing</option>
+ <option>AI Avatar & AI Video</option>
+ <option>Lead Generation</option>
+ <option>Google My Business (GMB)</option>
+ <option>Content Creation</option>
+ <option>CRM & Marketing Automation</option>
+ <option>LinkedIn Personal Branding</option>
+ <option>Real Estate Marketing</option>
+ <option>Local Business Marketing</option>
+ <option>YouTube Marketing</option>
+ <option>E-commerce Marketing</option>
+ <option>WhatsApp Marketing</option>
+ <option>Funnel & Landing Pages</option>
+ <option>Full Digital Marketing Package</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="contact-budget">Monthly Budget</label>
+ <select id="contact-budget" name="budget">
+ <option value="">Select budget range...</option>
+ <option>Under ₹10,000/month</option>
+ <option>₹10,000 – ₹25,000/month</option>
+ <option>₹25,000 – ₹50,000/month</option>
+ <option>₹50,000 – ₹1,00,000/month</option>
+ <option>₹1,00,000+/month</option>
+ <option>Custom / Enterprise</option>
+ </select>
+ </div>
+ </div>
+ <div class="form-group">
+ <label for="contact-message">Your Message *</label>
+ <textarea id="contact-message" name="message" placeholder="Tell us about your business, goals, and what you'd like to achieve with digital marketing..." required></textarea>
+ </div>
+ <div class="form-group">
+ <label for="contact-how">How Did You Find Us?</label>
+ <select id="contact-how" name="source">
+ <option value="">Select...</option>
+ <option>Google Search</option>
+ <option>Facebook / Instagram</option>
+ <option>WhatsApp</option>
+ <option>Referral from a friend</option>
+ <option>YouTube</option>
+ <option>LinkedIn</option>
+ <option>Other</option>
+ </select>
+ </div>
+ <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width:100%;justify-content:center;font-size:1.05rem;padding:16px">
+ <i class="fas fa-paper-plane"></i> Send Message & Get Free Consultation
+ </button>
+ <p style="text-align:center;font-size:0.8rem;color:var(--text-muted);margin-top:12px"><i class="fas fa-lock" style="color:var(--primary)"></i> Your information is 100% secure and will never be shared.</p>
+ </form>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- FAQ -->
+ 
+ <!-- ===== FAQ SECTION ===== -->
+ <section class="section-padding" id="faq" style="background:rgba(255,255,255,0.01)">
+ <div class="container">
+ <div class="section-header" data-aos="fade-up" style="text-align:center;margin-bottom:50px;">
+ <div class="section-badge"><i class="fas fa-question-circle"></i> FAQs</div>
+ <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;margin:16px 0 12px;">Frequently Asked <span class="text-gradient">Questions</span></h2>
+ </div>
+ <div class="faq-list" data-aos="fade-up" style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
+ <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
+ <div class="faq-question" onclick="toggleFaq(this)" style="padding:22px 28px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+ How long does it take to see results from digital marketing?
+ <i class="fas fa-plus" style="font-size:0.9rem;color:var(--primary);transition:transform 0.3s;flex-shrink:0;"></i>
+ </div>
+ <div class="faq-answer" style="display:none;padding:0 28px 22px;color:var(--text-muted);line-height:1.8;font-size:0.95rem;">
+ Results vary by service. Google Ads and Meta Ads can show results within days. SEO typically takes 60–90 days to show significant movement. Social media growth usually becomes visible within 30–60 days. We set realistic expectations during our onboarding call.</div>
+ </div>
+ </div>
+ <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
+ <div class="faq-question" onclick="toggleFaq(this)" style="padding:22px 28px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+ What is your minimum contract period?
+ <i class="fas fa-plus" style="font-size:0.9rem;color:var(--primary);transition:transform 0.3s;flex-shrink:0;"></i>
+ </div>
+ <div class="faq-answer" style="display:none;padding:0 28px 22px;color:var(--text-muted);line-height:1.8;font-size:0.95rem;">
+ We typically recommend a minimum of 3 months to see measurable results, especially for SEO and social media. For paid ads, we can start with a month-to-month arrangement. However, our best results come from long-term partnerships of 6–12+ months.</div>
+ </div>
+ </div>
+ <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
+ <div class="faq-question" onclick="toggleFaq(this)" style="padding:22px 28px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+ Do you work with businesses outside ?
+ <i class="fas fa-plus" style="font-size:0.9rem;color:var(--primary);transition:transform 0.3s;flex-shrink:0;"></i>
+ </div>
+ <div class="faq-answer" style="display:none;padding:0 28px 22px;color:var(--text-muted);line-height:1.8;font-size:0.95rem;">
+ Absolutely! While we're headquartered, we serve clients across India and internationally in UAE, USA, UK, Canada, and Australia. All our services are delivered remotely with regular video call check-ins.</div>
+ </div>
+ </div>
+ <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
+ <div class="faq-question" onclick="toggleFaq(this)" style="padding:22px 28px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+ What makes Internet Spark different from other agencies?
+ <i class="fas fa-plus" style="font-size:0.9rem;color:var(--primary);transition:transform 0.3s;flex-shrink:0;"></i>
+ </div>
+ <div class="faq-answer" style="display:none;padding:0 28px 22px;color:var(--text-muted);line-height:1.8;font-size:0.95rem;">
+ We're 100% results-focused. Every strategy is backed by data, every campaign is A/B tested, and every report shows exactly what's working and why. You get a dedicated account manager, full transparency, and a team that genuinely cares about your growth — not just retaining your contract.</div>
+ </div>
+ </div>
+ <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
+ <div class="faq-question" onclick="toggleFaq(this)" style="padding:22px 28px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+ Can I get a free consultation before committing?
+ <i class="fas fa-plus" style="font-size:0.9rem;color:var(--primary);transition:transform 0.3s;flex-shrink:0;"></i>
+ </div>
+ <div class="faq-answer" style="display:none;padding:0 28px 22px;color:var(--text-muted);line-height:1.8;font-size:0.95rem;">
+ Yes! We offer a completely free 45-minute strategy session where we audit your current digital presence, identify growth opportunities, and present a custom roadmap — with no obligation to sign up. Fill in the form above to book yours.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+
+ <!-- WhatsApp CTA -->
+ <section class="cta-section">
+ <div class="cta-bg"></div>
+ <div class="container" style="position:relative;z-index:1">
+ <div class="" data-aos="fade-up">
+ <div style="font-size:4rem;margin-bottom:16px">💬</div>
+ <h2 style="margin-bottom:16px">Prefer to <span class="text-gradient">Chat on WhatsApp?</span></h2>
+ <p style="max-width:500px;margin:0 auto 32px">Get an instant response from our team. Click below to start a WhatsApp conversation right now.</p>
+ <a href="https://wa.me/919313702720?text=Hi%20Internet%20Spark!%20I%20want%20to%20know%20more%20about%20your%20digital%20marketing%20services." target="_blank" class="btn btn-primary" id="wa-cta-main" style="font-size:1.1rem;padding:18px 48px;background:#25D366;box-shadow:0 8px 30px rgba(37,211,102,0.4)">
+ <i class="fab fa-whatsapp"></i> Chat on WhatsApp Now
+ </a>
+ </div>
+ </div>
+ </section>
+
+ <div id="shared-footer"></div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+ <script src="js/shared.js"></script>
+ <script src="js/main.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>AOS.init({duration: 800, once: true});</script>
+<script>function toggleFaq(el) {
+ const item = el.parentElement;
+ const answer = item.querySelector('.faq-answer');
+ const icon = el.querySelector('i');
+ if (answer.style.display === 'none' || !answer.style.display) {
+ answer.style.display = 'block';
+ item.classList.add('active');
+ if (icon) icon.className = 'fas fa-minus';
+ } else {
+ answer.style.display = 'none';
+ item.classList.remove('active');
+ if (icon) icon.className = 'fas fa-plus';
+ }
+ }</script>
+</body>
+</html>
