@@ -1257,27 +1257,31 @@ footer {
 
 /* ===== FAQ Accordion ===== */
 .faq-item {
-  background: var(--glass);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--border-radius);
-  margin-bottom: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  margin-bottom: 16px;
   overflow: hidden;
   transition: var(--transition);
+  width: 100%;
 }
 
 .faq-item.active {
-  border-color: rgba(233, 30, 140,0.3);
+  border-color: rgba(233, 30, 140, 0.35);
+  background: rgba(233, 30, 140, 0.05);
 }
 
 .faq-question {
-  padding: 20px 24px;
+  padding: 22px 28px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   transition: var(--transition);
+  gap: 16px;
+  width: 100%;
 }
 
 .faq-question:hover {
@@ -1286,7 +1290,7 @@ footer {
 
 .faq-icon {
   width: 30px; height: 30px;
-  background: rgba(233, 30, 140,0.15);
+  background: rgba(233, 30, 140, 0.15);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1307,13 +1311,53 @@ footer {
 }
 
 .faq-answer-inner {
-  padding: 0 24px 20px;
+  padding: 0 28px 22px;
   color: var(--text-muted);
   line-height: 1.8;
+  font-size: 0.95rem;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 300px;
+  max-height: 500px;
+}
+
+/* Inline-style FAQ answers (used in service pages) */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-list .faq-item,
+.faq-list > div {
+  background: rgba(255,255,255,0.03) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 16px !important;
+  width: 100% !important;
+  overflow: hidden;
+}
+
+.faq-list .faq-question,
+.faq-list > div > div:first-child {
+  padding: 22px 28px !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 16px !important;
+  width: 100% !important;
+  font-size: 1rem !important;
+}
+
+.faq-list .faq-answer,
+.faq-list > div > div:last-child {
+  padding: 0 28px 22px !important;
+  color: var(--text-muted) !important;
+  line-height: 1.8 !important;
+  font-size: 0.95rem !important;
 }
 
 /* ===== Contact Form ===== */
