@@ -99,6 +99,15 @@
   const navPlaceholder = document.getElementById('shared-nav') || document.getElementById('navbar') || document.querySelector('.navbar');
   if (navPlaceholder) navPlaceholder.outerHTML = navHTML;
   else document.body.insertAdjacentHTML('afterbegin', navHTML);
+  // Inject orbital logo animation
+  const orbitalHTML = `
+  <div class="logo-circle">
+    <img src="${base}images/sir.png" style="top: 0; left: 50%; transform: translate(-50%, -50%);" alt="Orbit Logo 1">
+    <img src="${base}images/sir.png" style="bottom: 0; left: 50%; transform: translate(-50%, 50%);" alt="Orbit Logo 2">
+    <img src="${base}images/sir.png" style="top: 50%; left: 0; transform: translate(-50%, -50%);" alt="Orbit Logo 3">
+    <img src="${base}images/sir.png" style="top: 50%; right: 0; transform: translate(50%, -50%);" alt="Orbit Logo 4">
+  </div>`;
+  document.body.insertAdjacentHTML('beforeend', orbitalHTML);
 
   // Inject boxify script
   const boxifyScript = document.createElement('script');
