@@ -1,15 +1,19 @@
 // boxify.js – automatically wrap heading + paragraph pairs in a styled .content-box
-// This script runs after the DOM is ready and adds a background image (default: images/sir.png)
+// This script runs after the DOM is ready and wraps headings + paragraphs
 (function() {
-  const defaultImg = 'images/sir.png'; // fallback image
   // Helper to create a box wrapper
   function wrapSection(heading, paragraph, imgUrl) {
     const wrapper = document.createElement('div');
     wrapper.className = 'content-box';
-    // Apply background image via inline style for flexibility
-    wrapper.style.backgroundImage = `url(${imgUrl})`;
-    wrapper.style.backgroundSize = 'cover';
-    wrapper.style.backgroundPosition = 'center';
+    
+    // Apply background image only if explicitly provided via data-bg attribute
+    if (imgUrl) {
+      wrapper.style.backgroundImage = `url(${imgUrl})`;
+      wrapper.style.backgroundSize = 'cover';
+      wrapper.style.backgroundPosition = 'center';
+      // Add a dark overlay so text remains readable over the image
+      wrapper.style.boxShadow = 'inset 0 0 0 2000px rgba(10,10,15,0.85)';
+    }
 
     // Insert wrapper before heading and move heading + paragraph inside
     heading.parentNode.insertBefore(wrapper, heading);
@@ -31,7 +35,7 @@
       if (next && next.tagName === 'P') {
         // Use a data attribute on heading to optionally specify image
         const imgAttr = heading.getAttribute('data-bg');
-        const imgUrl = imgAttr ? imgAttr.trim() : defaultImg;
+        const imgUrl = imgAttr ? imgAttr.trim() : null;
         wrapSection(heading, next, imgUrl);
       }
     });
