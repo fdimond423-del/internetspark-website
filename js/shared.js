@@ -91,7 +91,7 @@
           <a href="${base}contact.html" class="btn btn-primary" style="margin-top:20px;display:inline-flex"><i class="fas fa-paper-plane"></i> Send a Message</a>
         </div>
       </div>
-      <div class="footer-bottom"><p>© 2024 Internet Spark. All Rights Reserved. | Made with ❤️</p><div style="display:flex;gap:20px"><a href="${base}privacy-policy.html" style="color:var(--text-muted);font-size:0.875rem">Privacy Policy</a><a href="${base}contact.html" style="color:var(--text-muted);font-size:0.875rem">Contact</a></div></div>
+      <div class="footer-bottom"><p>© 2024 Internet Spark. All Rights Reserved.</p><div style="display:flex;gap:20px"><a href="${base}privacy-policy.html" style="color:var(--text-muted);font-size:0.875rem">Privacy Policy</a><a href="${base}contact.html" style="color:var(--text-muted);font-size:0.875rem">Contact</a></div></div>
     </div>
   </footer>`;
 
