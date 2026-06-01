@@ -1801,7 +1801,7 @@ footer {
 
 /* ===== UNIVERSAL LOADER LOGO (Big, Premium) ===== */
 /* Case 1: img IS the .loader-logo */
-img.loader-logo { width: 250px; height: auto; animation: pulse 2s infinite; filter: grayscale(1) invert(1) brightness(2); mix-blend-mode: screen; }
+div.loader-logo img { width: 100%; height: auto; }
 
 /* Case 2: div.loader-logo contains an img */
 div.loader-logo {
