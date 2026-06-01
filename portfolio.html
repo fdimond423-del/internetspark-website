@@ -282,9 +282,9 @@
  tab.classList.add('active');
  const filter = tab.dataset.filter;
  document.querySelectorAll('.port-card').forEach(card => {
- if (filter === 'all') {
-   card.style.display = (card.dataset.cat === 'ugc' || card.classList.contains('ads-carousel')) ? 'none' : '';
- } else {
+  if (filter === 'all') {
+    card.style.display = card.classList.contains('ads-carousel') ? 'none' : '';
+  } else {
    card.style.display = card.dataset.cat === filter ? '' : 'none';
  }
  });
