@@ -1,15 +1,22 @@
 /* Shared Nav & Footer Injector */
 (function() {
-  const pathParts = window.location.pathname.split('/');
-  const dirDepth = pathParts.length - 2;
-  const base = dirDepth > 0 ? '../'.repeat(dirDepth) : '';
+    let base = '';
+  const scripts = document.getElementsByTagName('script');
+  for (let i = 0; i < scripts.length; i++) {
+    const src = scripts[i].getAttribute('src');
+    if (src && src.includes('shared.js')) {
+      if (src.startsWith('../')) base = '../';
+      else if (src.startsWith('../../')) base = '../../';
+      break;
+    }
+  }
 
   
   const navHTML = `
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="${base}index.html" class="nav-logo">
-        <img src="${base}images/logo final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain;">
+        <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain;">
       </a>
       <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
       <ul class="nav-menu" id="nav-menu">
@@ -47,7 +54,7 @@
         <div class="footer-brand">
           <div class="logo">
             <a href="${base}index.html" style="display:inline-block;">
-              <img src="${base}images/logo final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain; mix-blend-mode: screen; margin-left: -20px;">
+              <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain; mix-blend-mode: screen; margin-left: -20px;">
             </a>
           </div>
           <p>Internet Spark is a premium international digital marketing agency. Data-driven strategies that transform businesses and generate measurable ROI.</p>
