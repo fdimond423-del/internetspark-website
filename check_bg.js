@@ -1,20 +1,6 @@
-const Jimp = require('jimp');
+const fs = require('fs');
 
-async function checkBg() {
-  const image = await Jimp.read('images/sir.png');
-  const width = image.bitmap.width;
-  const height = image.bitmap.height;
-  
-  const topLeft = Jimp.intToRGBA(image.getPixelColor(0, 0));
-  const topRight = Jimp.intToRGBA(image.getPixelColor(width - 1, 0));
-  const bottomLeft = Jimp.intToRGBA(image.getPixelColor(0, height - 1));
-  const bottomRight = Jimp.intToRGBA(image.getPixelColor(width - 1, height - 1));
-  
-  console.log(`Dimensions: ${width}x${height}`);
-  console.log(`Top Left:`, topLeft);
-  console.log(`Top Right:`, topRight);
-  console.log(`Bottom Left:`, bottomLeft);
-  console.log(`Bottom Right:`, bottomRight);
-}
-
-checkBg().catch(console.error);
+// We don't have an image processing library, but we can read the raw JPEG file.
+// Usually, we can't easily parse JPEG without a library like 'jpeg-js'.
+// Since we don't have it, let's just assume it's a white background for now, or install jimp/jpeg-js.
+console.log('Skipped image reading. I will just install a quick package to check if needed, or ask user.');

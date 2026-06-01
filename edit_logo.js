@@ -2,7 +2,7 @@ const { Jimp } = require("jimp");
 const fs = require("fs");
 
 async function editLogo() {
-  const buffer = fs.readFileSync("images/logo.png");
+  const buffer = fs.readFileSync("images/logo20.jpeg");
   const image = await Jimp.read(buffer);
   
   image.scan(0, 0, image.bitmap.width, image.bitmap.height, function(x, y, idx) {

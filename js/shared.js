@@ -1,13 +1,23 @@
 /* Shared Nav & Footer Injector */
 (function() {
-  const isService = window.location.pathname.includes('/services/');
-  const base = isService ? '../' : '';
+  const pathParts = window.location.pathname.split('/');
+  const dirDepth = pathParts.length - 2;
+  const base = dirDepth > 0 ? '../'.repeat(dirDepth) : '';
+
   
   const navHTML = `
+  <style>
+    @media(min-width: 993px) {
+      .nav-container {
+        justify-content: center !important;
+        gap: 120px;
+      }
+    }
+  </style>
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="${base}index.html" class="nav-logo">
-        <img src="${base}images/sir.png" alt="Internet Spark Logo" style="height: 45px; width: auto; object-fit: contain;">
+        <img src="${base}images/logo final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain;">
       </a>
       <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
       <ul class="nav-menu" id="nav-menu">
@@ -16,25 +26,18 @@
         <li class="nav-item has-mega-menu">
           <a href="${base}services.html" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size:0.7rem"></i></a>
           <div class="mega-menu"><div class="mega-menu-grid">
-            <a href="${base}services/social-media-marketing.html" class="mega-menu-item"><span class="icon">📱</span>Social Media</a>
+            <a href="${base}services/social-media-marketing.html" class="mega-menu-item"><span class="icon">📱</span>Social Media Marketing</a>
             <a href="${base}services/meta-ads.html" class="mega-menu-item"><span class="icon">📘</span>Meta Ads</a>
             <a href="${base}services/google-ads.html" class="mega-menu-item"><span class="icon">🎯</span>Google Ads</a>
-            <a href="${base}services/seo.html" class="mega-menu-item"><span class="icon">🔍</span>SEO</a>
-            <a href="${base}services/website-development.html" class="mega-menu-item"><span class="icon">💻</span>Website Dev</a>
+            <a href="${base}services/seo.html" class="mega-menu-item"><span class="icon">🔍</span>Search Engine Optimization</a>
+            <a href="${base}services/website-development.html" class="mega-menu-item"><span class="icon">💻</span>Website Development</a>
             <a href="${base}services/branding-graphic-design.html" class="mega-menu-item"><span class="icon">🎨</span>Branding</a>
             <a href="${base}services/video-editing.html" class="mega-menu-item"><span class="icon">🎬</span>Video Editing</a>
             <a href="${base}services/ai-avatar-video.html" class="mega-menu-item"><span class="icon">🤖</span>AI Video</a>
-            <a href="${base}services/lead-generation.html" class="mega-menu-item"><span class="icon">🎯</span>Lead Gen</a>
             <a href="${base}services/google-my-business.html" class="mega-menu-item"><span class="icon">📍</span>Google My Business</a>
-            <a href="${base}services/content-creation.html" class="mega-menu-item"><span class="icon">✍️</span>Content</a>
             <a href="${base}services/crm-automation.html" class="mega-menu-item"><span class="icon">⚙️</span>CRM & Automation</a>
-            <a href="${base}services/linkedin-branding.html" class="mega-menu-item"><span class="icon">💼</span>LinkedIn</a>
-            <a href="${base}services/real-estate-marketing.html" class="mega-menu-item"><span class="icon">🏠</span>Real Estate</a>
-            <a href="${base}services/local-business-marketing.html" class="mega-menu-item"><span class="icon">🏪</span>Local Business</a>
-            <a href="${base}services/youtube-marketing.html" class="mega-menu-item"><span class="icon">▶️</span>YouTube</a>
-            <a href="${base}services/ecommerce-marketing.html" class="mega-menu-item"><span class="icon">🛒</span>E-commerce</a>
-            <a href="${base}services/whatsapp-marketing.html" class="mega-menu-item"><span class="icon">💬</span>WhatsApp</a>
-            <a href="${base}services/funnel-landing-page.html" class="mega-menu-item"><span class="icon">🚀</span>Funnels</a>
+            <a href="${base}services/real-estate-marketing.html" class="mega-menu-item"><span class="icon">🏠</span>Real Estate Marketing</a>
+            <a href="${base}services/whatsapp-marketing.html" class="mega-menu-item"><span class="icon">💬</span>WhatsApp Marketing</a>
           </div></div>
         </li>
         <li class="nav-item"><a href="${base}portfolio.html" class="nav-link">Portfolio</a></li>
@@ -52,7 +55,7 @@
         <div class="footer-brand">
           <div class="logo">
             <a href="${base}index.html" style="display:inline-block;">
-              <img src="${base}images/sir.png" alt="Internet Spark Logo" style="height: 55px; width: auto; object-fit: contain;">
+              <img src="${base}images/logo final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain; mix-blend-mode: screen; margin-left: -20px;">
             </a>
           </div>
           <p>Internet Spark is a premium international digital marketing agency. Data-driven strategies that transform businesses and generate measurable ROI.</p>
@@ -79,9 +82,7 @@
           <li><a href="${base}services/google-ads.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Google Ads</a></li>
           <li><a href="${base}services/seo.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> SEO</a></li>
           <li><a href="${base}services/website-development.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Website Dev</a></li>
-          <li><a href="${base}services/lead-generation.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Lead Gen</a></li>
           <li><a href="${base}services/real-estate-marketing.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> Real Estate</a></li>
-          <li><a href="${base}services/ecommerce-marketing.html"><i class="fas fa-chevron-right" style="font-size:0.7rem"></i> E-commerce</a></li>
         </ul></div>
         <div><h4 class="footer-heading">Contact Us</h4>
           <div class="footer-contact-item"><div class="icon"><i class="fas fa-map-marker-alt"></i></div><div>A-407, KP Epitome, Nr. DAV International School, Makarba – 380051</div></div>

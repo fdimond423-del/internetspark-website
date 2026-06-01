@@ -46,6 +46,11 @@ function tryFile(filePath, res) {
 
 const server = http.createServer((req, res) => {
   let urlPath = req.url.split('?')[0];
+  try {
+    urlPath = decodeURIComponent(urlPath);
+  } catch (err) {
+    console.error('Failed to decode URL:', urlPath);
+  }
 
   // Root → index.html
   if (urlPath === '/') {
@@ -53,6 +58,12 @@ const server = http.createServer((req, res) => {
   }
 
   const filePath = path.join(ROOT, urlPath);
+
+  // Try .html first for clean URLs
+  const htmlPath = filePath + '.html';
+  if (!urlPath.endsWith('/') && fs.existsSync(htmlPath)) {
+    return tryFile(htmlPath, res);
+  }
 
   // Try exact path first
   fs.access(filePath, fs.constants.F_OK, (err) => {

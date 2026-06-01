@@ -73,7 +73,7 @@ h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
 h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 h4 { font-size: clamp(1.1rem, 2vw, 1.5rem); }
 
-p { color: var(--text-light); line-height: 1.8; text-align: left; overflow-wrap: break-word; word-wrap: break-word; max-width: 100%; }
+p { color: var(--text-light); line-height: 1.8; text-align: center; overflow-wrap: break-word; word-wrap: break-word; max-width: 100%; }
 
 a {
   text-decoration: none;
@@ -239,7 +239,7 @@ img { max-width: 100%; height: auto; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  padding: 16px 0;
+  padding: 4px 0;
   background: transparent;
   transition: var(--transition);
 }
@@ -330,8 +330,9 @@ img { max-width: 100%; height: auto; }
 .mega-menu {
   position: absolute;
   top: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%) translateY(-10px);
+  right: -80px;
+  left: auto;
+  transform: translateY(-10px);
   width: 720px;
   background: rgba(10,10,15,0.95);
   backdrop-filter: blur(40px);
@@ -608,7 +609,7 @@ img { max-width: 100%; height: auto; }
   margin: 0 auto;
   line-height: 1.8;
   color: var(--text-muted);
-  text-align: left;
+  text-align: center;
 }
 
 /* ===== Cards ===== */
@@ -1280,11 +1281,15 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: left;
   font-weight: 700;
   font-size: 1rem;
   transition: var(--transition);
   gap: 16px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .faq-question:hover {
@@ -1318,6 +1323,7 @@ footer {
   color: var(--text-muted);
   line-height: 1.8;
   font-size: 0.95rem;
+  text-align: left;
 }
 
 .faq-item.active .faq-answer {
@@ -1349,6 +1355,7 @@ footer {
   cursor: pointer;
   display: flex !important;
   justify-content: space-between !important;
+  text-align: left !important;
   align-items: center !important;
   gap: 16px !important;
   width: 100% !important;
@@ -1361,6 +1368,7 @@ footer {
   color: var(--text-muted) !important;
   line-height: 1.8 !important;
   font-size: 0.95rem !important;
+  text-align: left !important;
 }
 
 /* ===== Contact Form ===== */
@@ -1649,7 +1657,8 @@ footer {
 
   .mega-menu {
     width: 560px;
-    left: 0;
+    right: -20px;
+    left: auto;
     transform: translateY(-10px);
   }
 
@@ -1792,14 +1801,7 @@ footer {
 
 /* ===== UNIVERSAL LOADER LOGO (Big, Premium) ===== */
 /* Case 1: img IS the .loader-logo */
-img.loader-logo {
-  height: 140px !important;
-  width: auto !important;
-  max-height: 160px !important;
-  margin-bottom: 28px;
-  animation: pulse-logo 2s ease-in-out infinite;
-  filter: drop-shadow(0 0 30px rgba(233, 30, 140, 0.7));
-}
+img.loader-logo { width: 250px; height: auto; animation: pulse 2s infinite; filter: grayscale(1) invert(1) brightness(2); mix-blend-mode: screen; }
 
 /* Case 2: div.loader-logo contains an img */
 div.loader-logo {
@@ -1811,9 +1813,9 @@ div.loader-logo {
 }
 
 div.loader-logo img {
-  height: 140px !important;
+  height: 220px !important;
   width: auto !important;
-  max-height: 160px !important;
+  max-height: 240px !important;
   display: block;
   filter: drop-shadow(0 0 30px rgba(233, 30, 140, 0.7));
 }
@@ -2686,10 +2688,20 @@ div.loader-logo:not(:has(img)) {
   z-index: 2;
 }
 
-/* Hide loader images */
+/* Show and animate the image logo */
 .loader-logo,
 .page-loader img {
-  display: none !important;
+  display: block !important;
+  max-width: 300px; /* middle bada karke */
+  height: auto;
+  margin: 0 auto 30px auto;
+  mix-blend-mode: screen; /* bg remove */
+  animation: logo-glow-pulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes logo-glow-pulse {
+  0% { transform: scale(0.9); filter: drop-shadow(0 0 10px rgba(233, 30, 140, 0.4)); }
+  100% { transform: scale(1.1); filter: drop-shadow(0 0 30px rgba(233, 30, 140, 0.9)); }
 }
 
 /* Earth (Pruthvi) Animation */

@@ -4,8 +4,8 @@
  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="description" content="Digital Marketing Blog by Internet Spark — Insights on SEO, Meta Ads, Google Ads, Social Media, E-commerce and more from India's leading digital marketing experts.">
  <title>Blog | Internet Spark - Digital Marketing Insights</title>
- <link rel="icon" type="image/png" href="images/sir.png">
- <link rel="stylesheet" href="css/main.css?v=2.1">
+ <link rel="icon" type="image/png" href="images/logo final.png">
+ <link rel="stylesheet" href="css/main.css?v=3.4">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
  <style>
  .blog-layout { display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: start; }
@@ -26,7 +26,7 @@
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
- <div class="page-loader"><img src="images/sir.png" alt="Internet Spark" class="loader-logo"><div class="loader-bar"><div class="loader-progress"></div></div></div>
+ <div class="page-loader"><img src="images/logo final.png" alt="Internet Spark" class="loader-logo"><div class="loader-bar"><div class="loader-progress"></div></div></div>
  <div class="animated-bg"></div><canvas id="particles-canvas"></canvas>
  <a href="https://wa.me/919313702720" target="_blank" class="whatsapp-float" id="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
  <a href="tel:+919313702720" class="call-float" id="call-btn"><i class="fas fa-phone-alt"></i></a>
@@ -111,7 +111,7 @@
  <div class="blog-meta"><span class="category">LinkedIn</span><span>🕐 9 min</span><span>April 15, 2024</span></div>
  <h4 style="margin-bottom:8px">LinkedIn Personal Branding for CEOs and Founders in 2024</h4>
  <p style="font-size:0.875rem;color:var(--text-muted)">How Indian executives are using LinkedIn to build authority, generate B2B leads, and attract top talent...</p>
- <a href="blog/linkedin-branding.html" class="btn btn-ghost" id="blog-read-6" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
+ <a href="#" class="btn btn-ghost" id="blog-read-6" style="margin-top:16px;font-size:0.875rem;padding:10px 20px">Read More →</a>
  </div>
  </div>
  <div class="blog-card " data-aos="fade-up">
@@ -187,9 +187,38 @@
 
  <div id="shared-footer"></div>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
- <script src="js/shared.js?v=6"></script>
+ <script src="js/shared.js?v=17"></script>
  <script src="js/main.js"></script>
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>AOS.init({duration: 800, once: true});</script>
+ <script>
+   document.addEventListener('DOMContentLoaded', () => {
+     const filterBtns = document.querySelectorAll('.filter-tab');
+     const blogCards = document.querySelectorAll('.blog-card, .blog-hero-card');
+
+     filterBtns.forEach(btn => {
+       btn.addEventListener('click', () => {
+         // Update active state
+         filterBtns.forEach(b => b.classList.remove('active'));
+         btn.classList.add('active');
+
+         const filterText = btn.textContent.toLowerCase().trim();
+
+         // Filter cards
+         blogCards.forEach(card => {
+           const categorySpan = card.querySelector('.category');
+           if (!categorySpan) return;
+           const category = categorySpan.textContent.toLowerCase().trim();
+
+           if (filterText === 'all posts' || category.includes(filterText) || filterText.includes(category)) {
+             card.style.display = 'block';
+           } else {
+             card.style.display = 'none';
+           }
+         });
+       });
+     });
+   });
+ </script>
 </body>
 </html>

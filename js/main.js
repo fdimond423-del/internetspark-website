@@ -3,27 +3,7 @@
    ============================================ */
 
 // ===== Page Loader & Dynamic Logo Replacement =====
-document.addEventListener('DOMContentLoaded', () => {
-  // Replace image loader logos with HTML/CSS logo dynamically
-  document.querySelectorAll('.loader-logo, .page-loader img').forEach(img => {
-    const wrapper = document.createElement('div');
-    wrapper.className = 'spark-logo-wrapper';
-    wrapper.style.cssText = '--logo-width: 135px; --logo-height: 81px; --logo-scale: 0.35; margin: 0 auto 20px;';
-    wrapper.innerHTML = `
-      <div class="spark-logo">
-        <div class="text">
-          <div class="internet">Internet</div>
-          <div class="spark">SPARK</div>
-        </div>
-        <div class="icon">
-          <div class="i"></div>
-          <div class="s">S</div>
-        </div>
-      </div>
-    `;
-    img.replaceWith(wrapper);
-  });
-});
+// Removed dynamic logo replacement as requested by user
 
 window.addEventListener('load', () => {
   setTimeout(() => {
