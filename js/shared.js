@@ -6,14 +6,6 @@
 
   
   const navHTML = `
-  <style>
-    @media(min-width: 993px) {
-      .nav-container {
-        justify-content: center !important;
-        gap: 120px;
-      }
-    }
-  </style>
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="${base}index.html" class="nav-logo">
