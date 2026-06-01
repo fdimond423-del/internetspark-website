@@ -16,7 +16,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="${base}index.html" class="nav-logo">
-        <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 165px; width: auto; object-fit: contain; margin-top: -25px;">
+        <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 165px; width: auto; object-fit: contain; margin-top: -25px;" loading="lazy">
       </a>
       <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
       <ul class="nav-menu" id="nav-menu">
@@ -54,7 +54,7 @@
         <div class="footer-brand">
           <div class="logo">
             <a href="${base}index.html" style="display:inline-block;">
-              <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain; mix-blend-mode: screen; margin-left: -20px;">
+              <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain; mix-blend-mode: screen; margin-left: -20px;" loading="lazy">
             </a>
           </div>
           <p>Internet Spark is a premium international digital marketing agency. Data-driven strategies that transform businesses and generate measurable ROI.</p>
