@@ -16,7 +16,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="${base}index.html" class="nav-logo">
-        <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain;">
+        <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain; margin-top: -15px;">
       </a>
       <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
       <ul class="nav-menu" id="nav-menu">
