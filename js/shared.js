@@ -53,7 +53,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">
-            <a href="${base}index.html" style="display:inline-block;">
+            <a href="${base}index.html" style="display:inline-block; margin-bottom: -30px;">
               <img src="${base}images/logo-final.png" alt="Internet Spark Logo" style="height: 140px; width: auto; object-fit: contain; mix-blend-mode: screen; margin-left: -20px;" loading="lazy">
             </a>
           </div>

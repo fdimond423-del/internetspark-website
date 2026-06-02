@@ -126,7 +126,7 @@ function initParticles() {
   canvas.height = window.innerHeight;
 
   const particles = [];
-  const particleCount = Math.floor(window.innerWidth / 20);
+  const particleCount = Math.floor(window.innerWidth / 40);
 
   class Particle {
     constructor() {
@@ -137,9 +137,9 @@ function initParticles() {
       this.x = Math.random() * canvas.width;
       this.y = Math.random() * canvas.height;
       this.size = Math.random() * 2 + 0.5;
-      this.speedX = (Math.random() - 0.5) * 0.5;
-      this.speedY = (Math.random() - 0.5) * 0.5;
-      this.opacity = Math.random() * 0.5 + 0.1;
+      this.speedX = (Math.random() - 0.5) * 0.3;
+      this.speedY = (Math.random() - 0.5) * 0.3;
+      this.opacity = Math.random() * 0.4 + 0.1;
       this.color = Math.random() > 0.5 ? '233,30,140' : '123,47,190';
     }
 
@@ -203,10 +203,21 @@ function initParticles() {
   window.addEventListener('resize', () => {
     if (!canvas) return;
     
-    // if (window.innerWidth < 768) return; // Disable on mobile for performance
+    if (window.innerWidth < 768) {
+        canvas.style.display = 'none';
+        return;
+    } else {
+        canvas.style.display = 'block';
+    }
+    
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
   });
+
+  // Initial check
+  if (window.innerWidth < 768) {
+      canvas.style.display = 'none';
+  }
 }
 
 initParticles();

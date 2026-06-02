@@ -73,7 +73,7 @@ h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
 h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 h4 { font-size: clamp(1.1rem, 2vw, 1.5rem); }
 
-p { color: var(--text-light); line-height: 1.8; text-align: center; overflow-wrap: break-word; word-wrap: break-word; max-width: 100%; }
+p { color: var(--text-light); line-height: 1.8; text-align: left; overflow-wrap: break-word; word-wrap: break-word; max-width: 100%; }
 
 a {
   text-decoration: none;
@@ -92,6 +92,12 @@ img { max-width: 100%; height: auto; }
 
 .section-padding {
   padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
 }
 
 .text-gradient {
