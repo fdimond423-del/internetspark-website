@@ -3166,4 +3166,20 @@ div.loader-logo:not(:has(img)) {
   .two-col-grid {
     grid-template-columns: 1fr !important;
   }
+
+  /* --- Mobile Navbar Fix --- */
+  .navbar {
+    position: absolute !important;
+  }
+  .navbar.scrolled {
+    position: absolute !important;
+  }
+
+  /* --- Mobile AOS Animation Fix (Images not showing) --- */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    visibility: visible !important;
+  }
 }
